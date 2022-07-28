@@ -1,16 +1,19 @@
+.nav-part{
+    margin-bottom: 5rem;
+}
 .navbar-brand.main-demo{
     color: gray;
     font-size: var(--size-14)
 }
 .container.demo {
     display: flex;
+    color: gray;
 }
- .pageTop.container a {
-    color: red;
-    position: absolute;
-    top: 50px;
+ul.navbar-nav.rabbit a {
+    color: grey;
 }
-.navbar{
+ 
+.navbar {
     position: fixed;
     top: 0;
     right: 0;
@@ -29,7 +32,8 @@
 .navbar .container{
     display: flex;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
+
 }
 
 .navbar-brand {
@@ -53,7 +57,8 @@
     color: black;
 }
 .nav-link.home a { color: blue;}
-.nav-link.myButton a {
+.nav-link.myButton a,
+span.nav-link.myButton  {
     border: var(--size-1) solid var(--grad-1);
     box-shadow: 0 10px 20px rgb(161 236 255 / 50%);
     transition: ease-in-out 0.3s;
@@ -63,3 +68,18 @@
     border-radius: 1.25rem;
     cursor: pointer;
 }
+.empowering {
+    display: flex;
+}
+
+
+@keyframes empowering-right {
+    to {
+        visibility: visible;
+    }
+}
+.empowering-right {
+    visibility: hidden;
+    animation: 0s linear 2.3s forwards empowering-right ;
+}
+
