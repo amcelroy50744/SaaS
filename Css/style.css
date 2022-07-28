@@ -1,0 +1,65 @@
+.navbar-brand.main-demo{
+    color: gray;
+    font-size: var(--size-14)
+}
+.container.demo {
+    display: flex;
+}
+ .pageTop.container a {
+    color: red;
+    position: absolute;
+    top: 50px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 500;
+    transition: ease-in-out;
+}
+[aria-controls="navbarDropdown"]{
+    display: none;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+
+}
+.navbar .container{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+    color: blue;
+}
+
+.navbar-brand img {width: 5rem;}
+
+.nav-link a {
+    font-size: .8125rem;
+    font-weight: 600;
+    font-family: "Hind", sans-serif;
+    margin-right: var(--size-30);
+    line-height: var(--size-20);
+    white-space: nowrap;
+    color: black;
+}
+.nav-link.home a { color: blue;}
+.nav-link.myButton a {
+    border: var(--size-1) solid var(--grad-1);
+    box-shadow: 0 10px 20px rgb(161 236 255 / 50%);
+    transition: ease-in-out 0.3s;
+    color: white;
+    padding: 0.4375rem 1.5625rem;
+    background-color: blue;
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
