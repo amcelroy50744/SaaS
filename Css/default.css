@@ -18,10 +18,9 @@ html { scroll-behavior: smooth;}
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: var(--size-14);
+    font-size: var(--size-10);
     line-height: 1.6;
     letter-spacing: 0;
-    color: var(--font-color-base);
     margin: 0;
     padding: 0;
 }

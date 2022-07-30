@@ -1,3 +1,7 @@
+.section-1 {
+    background-image: linear-gradient(180deg, rgb(49, 48, 48), white);
+    padding-bottom: var(--size-100);
+}
 .nav-part{
     margin-bottom: 5rem;
 }
@@ -69,17 +73,106 @@ span.nav-link.myButton  {
     cursor: pointer;
 }
 .empowering {
-    display: flex;
+    display: inline-flex;
+    gap: 10rem;
+    flex-wrap: wrap;
 }
-
+div.empowering-left-header { font-size: var(--size-40); }
+div.empowering-left-para { font-size: var(--size-20); }
 
 @keyframes empowering-right {
     to {
         visibility: visible;
     }
 }
-.empowering-right {
+.empowering-imgs.google{
+    visibility: hidden;
+    animation: 0s linear 1.3s forwards empowering-right ;
+    transform: translate(-0.625rem, 1.25rem);
+    width: 1.4vw;
+}
+.empowering-imgs.atlas {
+    visibility: hidden;
+    animation: 0s linear 1.9s forwards empowering-right ;
+    transform: translate(10.938rem, 4.375rem);
+    width: 4.2vw;
+}
+.empowering-imgs.asana {
     visibility: hidden;
     animation: 0s linear 2.3s forwards empowering-right ;
+    transform: translate(26.563rem, -5rem);
+    width: 4rem;
 }
+.empowering-imgs.paypal {
+    visibility: hidden;
+    animation: 0s linear 2.9s forwards empowering-right ;
+    transform: translate(-1.25rem, 1.25rem);
+    width: 4rem;
+}
+.empowering-imgs.weave {
+    visibility: hidden;
+    animation: 0s linear 2.5s forwards empowering-right ;
+    transform: translate(25rem, -7.813rem);
+    width: 3rem;
+}
+.empowering-imgs.google-a {
+    visibility: hidden;
+    animation: 0s linear 2.7s forwards empowering-right ;
+    transform: translate(22.5rem, 3.75rem);
+    width: 2rem;
+}
+.empowering-imgs.calendar {
+    visibility: hidden;
+    animation: 0s linear 1.5s forwards empowering-right ;
+    transform: translate(25rem, -1.563);
+    width: 4rem;
+}
+
+ .gallery-imgs li img {
+    width: auto;
+    margin: auto;
+	list-style: none;
+	float: right;
+	padding: .625rem;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 50%;
+ }
+ 
+ .section-2 {
+    text-align: center;
+ }
+ .section-2.key-benefits h2 {
+    font-size: var(--size-20);
+    font-weight: 500;
+    line-height: 1.2;
+ }
+ div.key-benefits-para p {
+    font-size: var(--size-14);
+ }
+
+ .service-grid {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+.service-card {
+    padding: var(--size-30);
+    box-shadow: 0 0 10px rgba(48, 63, 100. .15);
+    background: white;
+    border-radius: 8px;
+    text-align: left;
+}
+div.service-card img {
+    width: 5rem;
+}
+
+
+
+
+
+
+
+
 
