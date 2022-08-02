@@ -155,22 +155,86 @@ div.empowering-left-para { font-size: var(--size-20); }
     display: inline-flex;
     align-items: stretch;
     justify-content: center;
+    gap: 5%;
+    padding-bottom: var(--size-100);
     
 }
 .service-card {
     padding: var(--size-30);
-    box-shadow: 0 0 10px rgba(48, 63, 100. .15);
-    background: white;
-    border-radius: 8px;
+    box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+    background: #FFFAFA;
+    border-radius: 1rem;
     text-align: left;
+    transition: 0.2s;
 }
 div.service-card img {
     width: 5rem;
 }
+.service-card:not(:first-child) {
+    margin-left: -2rem;
+}
+.service-card:hover,
+.service-card:not(:last-child):focus-within {
+  transform: translateY(-1rem);
+}
+.service-card {
+    transform: translateX(2rem);
+}
+.sketch-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 35%;
+    font-size: var(--size-14);
+    padding: 8px 8px;
+}
+.sketch-btn:hover {
+    font-size: 150%;
+}
+.banner-1 {
+    padding-bottom: var(--size-150);
+}
+.perspectives-para {
+    font-size: var(--size-20);
+    font-weight: 700;
+    padding-top: 15rem;
+    padding-left: 4rem;
+}
+.started-button {
+    border: var(--size-1) solid var(--grad-1);
+    box-shadow: 0 10px 20px rgb(161 236 255 / 50%);
+    transition: ease-in-out 0.3s;
+    color: white;
+    padding: 0.4375rem 1.5625rem;
+    background-color: blue;
+    border-radius: 1.30rem;
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
+.container.perspectives {
+    display: flex;
+    background-color: lightgray;
+    gap: 5%;
+    justify-content: space-between;
+}
 
-
-
+div.banner-1-img img {
+    padding-top: 3rem;
+    float: right;
+    margin-right: -1rem;
+}
+.why-wrapper {
+    text-align: center;
+    padding-bottom: var(--size-40);
+}
+.why-heading {
+    font-size: var(--size-30);
+}
+.why-wrapper{
+    font-size: var(--size-14);
+}
 
 
 
