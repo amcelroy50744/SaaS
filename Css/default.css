@@ -16,13 +16,21 @@
 html { scroll-behavior: smooth;}
 
 body {
+    max-width: 1150px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: var(--size-10);
     line-height: 1.6;
     letter-spacing: 0;
-    margin: 0;
+    margin: auto;
     padding: 0;
+    color: black;
+    box-sizing: border-box;
+
+}
+*::after,
+::before {
+    box-sizing: border-box;
 }
 
 ul {
@@ -42,9 +50,26 @@ img{
     border-style: none;
 } 
 .container {
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1200px;
+    margin: auto;
 }
+.mypadding {
+    padding-bottom: 150px;
+}
+div#myTopnav.topnav.container a.myBtn {
+    border: var(--size-1) solid var(--grad-1);
+    box-shadow: 0 10px 20px rgb(161 236 255 / 50%);
+    transition: ease-in-out 0.3s;
+    color: white;
+    padding: 0.4375rem 1.5625rem;
+    background-color: blue;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;  
+}
+
